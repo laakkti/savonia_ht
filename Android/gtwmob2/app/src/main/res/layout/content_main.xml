@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cpuTitle"
+            android:layout_width="55sp"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:text="CPU °C"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cpuTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/batTitle"
+            android:layout_width="55sp"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:text="Battery °C"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/batTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/batLevelTitle"
+            android:layout_width="55sp"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:text="Battery %"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/batLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/locationTitle"
+            android:layout_width="55sp"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:text="Location"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/memTitle"
+            android:layout_width="55sp"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:text="Mem usage"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <Switch android:layout_marginTop="4dp"
+        android:id="@+id/wifi"
+        android:switchPadding="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:text="Wifi" />
+    <Switch
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:text="Mobile" />
+    <LinearLayout android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mobileTypeTitle"
+            android:layout_width="55sp"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:text="MobileType"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mobileType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/strengthTitle"
+            android:layout_width="55sp"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:text="Signal strength"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>
